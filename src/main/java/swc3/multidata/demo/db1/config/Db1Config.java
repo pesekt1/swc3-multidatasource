@@ -2,6 +2,7 @@ package swc3.multidata.demo.db1.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +18,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
+@EnableConfigurationProperties(Db1Config.class)
 @EnableTransactionManagement
 @EnableJpaRepositories(
         entityManagerFactoryRef = "db1EntityManagerFactory",
