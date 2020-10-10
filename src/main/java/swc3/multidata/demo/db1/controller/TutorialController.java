@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import swc3.multidata.demo.db1.data.Tutorial;
 import swc3.multidata.demo.db1.repo.TutorialRepository;
-import swc3.multidata.demo.db2.data.Tutorial2;
-
 
 //REST Controller for client-side rendering
 
